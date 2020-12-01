@@ -1,0 +1,181 @@
+// font-family: 'Playfair Display', serif;
+
+// --Brandon Grotesque Regular
+// font-family: brandon-grotesque,sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// --Brandon Grotesque Bold
+// font-family: brandon-grotesque,sans-serif;
+// font-weight: 700;
+// font-style: normal;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: brandon-grotesque,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.8;
+    padding: 0 10%;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    margin: 0 15px 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    @media (max-width: 765px) {
+
+        .logo {
+            display: none;
+        }
+
+        .social_media_icons {
+
+            .social {
+                display: none;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 245px;
+    }
+
+    .blog_logo {
+        max-width: 260px;
+    }
+
+    .social_media_icons {
+        display: flex;
+        flex-direction: row;
+
+        .social {
+            width: 30px;
+            padding: 10px;
+        }
+    }
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 130px 15px 0 15px;
+
+    .sub-title {
+        font-size: 60px;
+        color: #7EA4C8;
+    }
+
+    @media (max-width: 325px) {
+
+        .sub-title {
+            font-size: 40px;
+        }
+    }
+
+    a {
+        color: #1f1f1f;
+        font-family: brandon-grotesque,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 24px;
+        line-height: 2;
+    }
+
+    .concept {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .theme {
+        font-size: 98px;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: -20px;
+        margin-bottom: 80px;
+        color: #7EA4C8;
+    }
+
+    @media (max-width: 485px) {
+
+        .theme {
+            font-size: 80px;
+        }
+    }
+
+    @media (max-width: 325px) {
+
+        .theme {
+            font-size: 60px;
+        }
+    }
+
+    .hero_image {
+        max-width: 840px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .dinnerware_specifics {
+        max-width: 840px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .gold_dinnerware {
+            line-height: 2;
+        }
+    }
+}
+
+footer {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+
+    .social_media_icons {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .social {
+            width: 40px;
+            padding: 10px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+
+        a {
+            color: #1f1f1f;
+        }
+    }
+}
